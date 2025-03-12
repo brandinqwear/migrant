@@ -7,7 +7,7 @@ def ocr_online(image_file):
     response = requests.post(
         url,
         files={"file": image_file},
-        data={"apikey": "YOUR_OCR_SPACE_API_KEY", "language": "nld"},
+        data={"apikey": "K84938341388957", "language": "nld"},
     )
     return response.json().get("ParsedResults", [{}])[0].get("ParsedText", "")
 
